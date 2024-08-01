@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.login-page{
+    background-color: rgb(224, 224, 224) ;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-login{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 500px;
+    width: 390px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 10px;
+    align-items: center;
+}
+.card-login > p > input{
+    height: 35px;
+    width: 300px;
+    padding: 8px;
+    border: solid 1px rgb(214, 214, 214);
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+.login{
+   padding: 20px;
+   margin: 20px;
+   border-radius: 7px;
+   background-color: rgb(66, 79, 250);
+   color: white;
+   cursor: pointer;
+   font-family: 'Archivo Black', sans-serif;
+   border: none;
+   width: 320px;
+   transition: 0.5s;
+   box-shadow: 1px 1px 1px rgb(167, 167, 167);
+}
+.login:hover{
+    background-color: rgb(0, 0, 190);
+    box-shadow: none;
+    transform: translateX(1px) translateY(1px);
+}
+.register{
+    padding: 10px;
+    margin: 2px;
+    border-radius: 7px;
+    background-color: rgb(158, 194, 0);
+    color: white;
+    cursor: pointer;
+    font-family: 'Archivo Black', sans-serif;
+    border: none;
+    width: 200px;
+    transition: 0.5s;
+    box-shadow: 1px 1px 1px rgb(0, 255, 0);
+    height: 50px;
+}
+.register:hover{
+    background-color: green;
+    transform: translateY(1px) translateX(1px);
+}
+.card-login h1{
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 20px;
+}
+.card-login h2{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px;
+}
+.body{
+    min-height: 100vh;
+}
+.topo{
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+    border: 10px black;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+    display: flex;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.topo > img{
+    height: 80px;
+    mix-blend-mode: multiply;
+    
+}
+.topo > ul{
+    display: flex;
+    list-style-type: none;
+}
+@media screen and (max-width:920px){
+    ul{
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        transform: translate(100%);
+    }
+    .topo > input{
+        display: none;
+    }
+    li{
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .burguer{
+        height: 30px;
+        width: 30px;
+        display :flex ;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+    .burguer > div {
+        height: 4px;
+        background-color: black;
+        width: 30px;
+        
+    
+    }
+}
+.topo > ul > a>li{
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 3px 10px;
+    box-shadow: 1px 1px 1px #666666;
+    cursor: pointer;
+    color: black;
+    transition: 0.5s;
+
+}
+.topo > ul >a> li:hover{
+    background-color: rgb(182, 182, 182);
+    color: white;
+    box-shadow: none;
+    transform: translateX(1px) translateY(1px);
+
+}
+.topo > ul > a > li > img{
+    width: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.topo > input{
+    width: 500px;
+    border-radius: 10px;
+    height: 40px;
+    background-color: rgb(231, 231, 231);
+    padding: 10px;
+    border: 0;
+    margin: 150px;
+}
+.topo > ul > li{
+    border: solid;
+}
+.topo > ul > a{
+    text-decoration: none;
+}

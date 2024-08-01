@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+#central{
+  width: 600px;
+  margin: 10% auto;
+}
+#imgGrande{
+  width: 600px;
+}
+#containerpequenas{
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+#containerpequenas>img{
+  width: 140px;
+  cursor: pointer;
+}
